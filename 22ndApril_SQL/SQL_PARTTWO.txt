@@ -1,0 +1,45 @@
+-- Display heading as Employee ID , Emplyee Name
+select id, name from employee
+select id as "Employee ID" , name as "Employee Name" from employee
+select id  "Employee ID" , name  "Employee Name" from 
+-- operators , which acts upon opersnds
+-- Arithmatical + - * / 
+-- Relational / Comparison  > < >= <= = !=
+-- logical > And , Or Not
+-- gve me recorsd where salary is more than 30000
+select * from employee where salary > 30000
+-- gve me recorsd where salary is more than 30000 and less than 4500
+select * from employee where salary > 30000 AND salary < 45000
+-- to replace AND oprator , we can use between operator
+select * from employee where salary between 30000 and 45000
+
+-- give me records where id is 11 or 15
+select * from employee where id = 11 OR id = 12
+-- to replace Or , we use IN operator
+select * from employee where id  IN (11, 12)
+
+--give me records where address contains delhi
+-- Like operator, this is used for pattern matching
+
+select * from  employee where address like 'Delhi'
+-- We will use wild card characters
+-- % > any no. of characters
+-- _ > 1 characters
+
+select *from employee where address like '%Delhi%'
+-- give me records where name starts with A
+select *from employee where name like 'A%'
+-- give me records where name ends with r
+select *from employee where name like '%r'
+-- give me records where name contains a at 2nd position
+
+select * from employee where name like '_a%'
+
+
+
+
+
+
+
+
+
