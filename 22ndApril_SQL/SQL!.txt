@@ -1,0 +1,48 @@
+-- create database practicedb
+-- DDL 
+create database practicedb
+use practicedb
+-- create table employee
+--DDL
+create table employee (id int , name char(20), address char(50), salary int)
+-- To get records
+-- DQL
+select * from employee
+-- insert record
+insert into employee values(10,'Ajay','B89, Delhi', 23000)
+insert into employee values(11,'Jay','C#89, New Delhi', 21000)
+insert into employee values(10,'Ajay','B89, Delhi', 23000)
+insert into employee values(11,'Jay','C#89, New Delhi', 21000)
+
+insert into employee values
+(13,'Sagar','Z 90, Calcutta', 45000),
+(12,'Jay','I-89, Mumbai', 31000),
+(14,'Prashanth','S90, Calcutta', 23000
+
+select * from employee
+
+-- projection , vertical subset of the table
+select Id, Name from employee
+-- selection
+-- Give me records where id is less than 12
+-- where clause
+select * from employee where id < 12
+
+-- Give me records where id is more than 12
+select * from employee where id > 12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
